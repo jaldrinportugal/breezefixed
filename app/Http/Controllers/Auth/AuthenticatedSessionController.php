@@ -17,7 +17,7 @@ class AuthenticatedSessionController extends Controller
         if ($user->usertype === 'admin') {
             return redirect()->route('admin.dashboard');
         } elseif ($user->usertype === 'patient') {
-            return redirect()->route('patient.appointment');
+            return redirect()->route('patient.dashboard');
         } elseif ($user->usertype === 'dentistrystudent') {
             return redirect()->route('dentistrystudent.communityforum');
         } else {

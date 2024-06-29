@@ -54,7 +54,7 @@ class RegisteredUserController extends Controller
                 return redirect()->route('admin.dashboard');
                 break;
             case 'patient':
-                return redirect()->route('patient.appointment');
+                return redirect()->route('patient.dashboard');
                 break;
             case 'dentistrystudent':
                 return redirect()->route('dentistrystudent.communityforum');
